@@ -1,0 +1,59 @@
+body{
+    background-color: #d3d3d3;
+    overflow: hidden;
+    div {
+        display: inline-block;
+        margin: 0px !important;
+        padding: 0px !important;
+    }
+    .content {
+        height: 100vh;
+        vertical-align: top;
+        margin-left: -4px;
+        .hidden {
+            display: none;
+        }
+        .drop{
+            cursor: pointer;
+        }
+        .menu {
+            background-color: rgba(0, 67, 62, .8);
+            position: fixed;
+            height: 100%;
+            font-size: 3em;
+            color: #93FFFD;
+            form {
+                color: darkslategray;
+            }
+            a {
+                color: #93FFFD;
+                &:hover {
+                    color: #3DC9C7;
+                    background-color: rgba(0, 67, 62, 0);
+                }
+                &:focus {
+                    background-color: rgba(0, 67, 62, 0);
+                }
+            }
+            .caret {
+                font-size: 3em !important;
+            }
+            .nav {
+                .dropdown-menu {
+                    background-color: rgba(0, 67, 62, .8);
+                    width:100%;
+                    .dropdown-list {
+                        display: inline-block !important;
+                        p {
+                            width: 50px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .customNav {
+        padding: 0px;
+        height: 100vh;
+    }
+}
